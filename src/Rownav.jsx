@@ -1,4 +1,5 @@
-export const Rownav = ({}) => {
+import './Rownav.css'
+export const Rownav = ({ }) => {
 
     return (
         <>
@@ -14,17 +15,17 @@ export const Rownav = ({}) => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Tecnologias</a>
-                            </li> 
+                            </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Proyectos</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Contactame</a>
-                            </li> 
+                            </li>
 
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Descargar Cv</a>
-                            </li> 
+                            </li>
                         </ul>
                     </div>
                 </div>

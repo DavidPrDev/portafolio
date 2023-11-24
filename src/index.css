@@ -6,16 +6,6 @@ html,body{
   background-color: #16161a !important;
   
 }
-.navbar-nav {
-flex: 1;
-display: flex;
-justify-content:space-around;
-
-}
-.navbar{
-  background-color: #21212779;
-}
-
 
 
 @media (max-width: 450px) {
