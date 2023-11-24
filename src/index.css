@@ -1,0 +1,25 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #CCCCCC !important;
+  background-color: #16161a !important;
+  
+}
+.navbar-nav {
+flex: 1;
+display: flex;
+justify-content:space-around;
+
+}
+.navbar{
+  background-color: #21212779;
+}
+
+
+@media (max-width: 450px) {
+  .logoSkills{
+    width: 32px;
+    height: 32px;
+  }
+}

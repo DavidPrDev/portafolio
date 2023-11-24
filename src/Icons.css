@@ -1,0 +1,39 @@
+
+#github,#linkedin,#contact{
+    text-decoration: none;
+    font-size: 30px;
+    width: 43px;
+    height: 35px;
+    margin-right: 4%;
+    color: rgb(214, 214, 214);
+    border-radius: 7px;
+    margin-top: 2vh;
+    transition: 0.3s ease-in-out;
+  
+  }
+  #github:hover,#linkedin:hover,#contact:hover{
+    transform: scale(1.2);
+  
+  }
+  #linkedin {
+  background-color: #7f5af0;
+  }
+  #linkedin svg{
+    width: 40px;
+    height: 40px;
+    padding-left: 3px;
+    margin-bottom: 2px;
+  }
+  #github{
+    background-color: #2cb67d;
+  }
+  #contact{
+    background-color: #b9b941;
+  }
+  svg{
+    padding-bottom: 16px;
+    width: 43px;
+    height: 43px;
+    
+  }
+  

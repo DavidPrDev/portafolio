@@ -1,0 +1,28 @@
+#videoPlayer{
+    width: 30vh;
+    height:30vh;
+    margin-left: 2vh;
+    margin-top: -6vh;
+    border-radius: 35px;
+
+  }
+  
+  .tituloPrincipal{
+    padding-top: 30vh!important;
+    height: 85vh;
+  }
+  .subtitle{
+    color: rgb(122, 121, 121);
+  }
+
+  @media (max-width: 600px) {
+    #videoPlayer{
+      width: 22vh;
+      height:22vh;
+      margin-top: -2vh;
+      margin-left: 4vh;
+    }
+    .subtitle{
+      font-size: 21px;
+    }
+  }
