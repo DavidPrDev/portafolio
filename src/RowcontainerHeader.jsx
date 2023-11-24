@@ -29,7 +29,7 @@ export const RowcontainerHeader = ({
                     </div>
                     <div className="col-sm-3 col-6 ">
                         <video id="videoPlayer" autoPlay muted>
-                            <source src="src/assets/media/headVideo.mp4" type="video/mp4" />
+                            <source src="public/media/headVideo.mp4" type="video/mp4" />
                             Tu navegador no soporta el tag de video.
 
                         </video>

@@ -1,0 +1,10 @@
+.navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content:space-around;
+    
+    }
+    .navbar{
+        background-color: #212127e5;
+    }
+    
