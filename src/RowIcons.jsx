@@ -39,8 +39,6 @@ export const RowIcons = () => {
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Github</Tooltip>}>
                         <img  className="logoSkills" src="src/assets/img/github.png" alt="logo github" />
                     </OverlayTrigger>
-
-                       
                     </div>
                 </div>
             </div>
