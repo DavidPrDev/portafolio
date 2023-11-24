@@ -10,34 +10,34 @@ export const RowIcons = () => {
                 <div className="row">
                     <div className="col colIcons">
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Html</Tooltip>}>
-                          <img className="logoSkills" src="public/img/html.png" alt="logo html" />
+                          <img className="logoSkills" src="img/html.png" alt="logo html" />
                     </OverlayTrigger>
 
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Css</Tooltip>}>
-                        <img className="logoSkills" src="public/img/css.png" alt="logo css" />
+                        <img className="logoSkills" src="img/css.png" alt="logo css" />
                     </OverlayTrigger>
 
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Javascript</Tooltip>}>
-                        <img className="logoSkills" src="public/img/javascript.png" alt=" logo javascript" />
+                        <img className="logoSkills" src="img/javascript.png" alt=" logo javascript" />
                     </OverlayTrigger>
 
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Php</Tooltip>}>
-                        <img  className="logoSkills" src="public/img/php.png" alt="logo php " />
+                        <img  className="logoSkills" src="img/php.png" alt="logo php " />
                     </OverlayTrigger>
                     <OverlayTrigger placement="top" overlay={  <Tooltip >React</Tooltip>}>
-                        <img className="logoSkills" src="public/img/react.png" alt=" logo react" />
+                        <img className="logoSkills" src="img/react.png" alt=" logo react" />
                     </OverlayTrigger>
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Laravel</Tooltip>}>
-                        <img className="logoSkills" src="public/img/laravel.png" alt="logo laravel" />
+                        <img className="logoSkills" src="img/laravel.png" alt="logo laravel" />
                     </OverlayTrigger>
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Bootstrap</Tooltip>}>
-                        <img  className="logoSkills" src="public/img/bootstrap.png" alt="logo bootstrap" />
+                        <img  className="logoSkills" src="img/bootstrap.png" alt="logo bootstrap" />
                     </OverlayTrigger>
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Mysql</Tooltip>}>
-                        <img  className="logoSkills" src="public/img/mysql.png" alt="logo mysql" />
+                        <img  className="logoSkills" src="img/mysql.png" alt="logo mysql" />
                     </OverlayTrigger>
                     <OverlayTrigger placement="top" overlay={  <Tooltip >Github</Tooltip>}>
-                        <img  className="logoSkills" src="public/img/github.png" alt="logo github" />
+                        <img  className="logoSkills" src="img/github.png" alt="logo github" />
                     </OverlayTrigger>
                     </div>
                 </div>
