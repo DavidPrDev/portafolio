@@ -1,6 +1,6 @@
 import './Rowcontainer4.css'
 
-export const RowContainer4 = ({titulo,content}) => {
+export const RowContainer4 = ({ titulo, content }) => {
 
     return (
         <>
@@ -8,9 +8,9 @@ export const RowContainer4 = ({titulo,content}) => {
                 <div className="row">
                     <div className="col-md-3 d-md-block d-sm-none"></div>
                     <div className="col-sm-12 col-md-6">
-                        <h2 className='text-center'>{titulo}</h2>
-                     
-                    {content}
+                        <h2 className=''>{titulo}</h2>
+
+                        {content}
 
                     </div>
 

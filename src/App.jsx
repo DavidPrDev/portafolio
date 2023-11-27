@@ -3,8 +3,9 @@ import { RowcontainerHeader } from './RowcontainerHeader'
 import { RowContainer4 } from './RowContainer4'
 import { RowIcons } from './RowIcons'
 import { Rownav } from './Rownav'
-import { ProjectPill } from './ProjectPill'
-
+import { ContainerPills } from './ContainerPills'
+import { ContactForm } from './ContactForm'
+import { RowFooter } from './RowFooter'
 export const App = () => {
 
   return (
@@ -29,10 +30,11 @@ export const App = () => {
       />
       <RowContainer4
         titulo="Proyectos"
-        content=""
+        content={<ContainerPills />}
 
       />
-
+      <ContactForm />
+      <RowFooter />
     </>
 
   )

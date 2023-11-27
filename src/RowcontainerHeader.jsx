@@ -16,8 +16,8 @@ export const RowcontainerHeader = ({
         <>
             <div className={`container ${clasContainer}`}>
                 <div className={`row ${classCenter} ${custClass}`}>
-                    <div className="col-sm-3 d-sm-block d-none"></div>
-                    <div className="col-sm-3 col-6 ">
+                    <div className="col-md-3 d-md-block d-none"></div>
+                    <div className="col-md-3 col-6 ">
 
                         <h1>{titulo}</h1>
                         {subtitl}
@@ -27,14 +27,14 @@ export const RowcontainerHeader = ({
 
                         {icons}
                     </div>
-                    <div className="col-sm-3 col-6 ">
+                    <div className="col-dm-3 col-6 ">
                         <video id="videoPlayer" autoPlay muted>
                             <source src="media/headVideo.mp4" type="video/mp4" />
                             Tu navegador no soporta el tag de video.
 
                         </video>
                     </div>
-                    <div className="col-sm-3 d-sm-block d-none"></div>
+                    <div className="col-dm-3 d-dm-block d-none"></div>
                 </div>
             </div>
         </>

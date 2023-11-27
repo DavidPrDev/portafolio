@@ -8,9 +8,41 @@ html,body{
 }
 
 
-@media (max-width: 450px) {
-  .logoSkills{
-    width: 32px;
-    height: 32px;
+
+.formu{
+  border:2px solid gray;
+  padding-left: 16%;
+  border: 2px solid #6666a420;
+  border-radius: 10px;  
+ 
+}
+.inputCustom{
+  width: 80%!important;
+  background-color: rgb(39, 39, 45) !important;
+  color: white !important;
+  border: 2px solid #6666a444 !important;
+  resize: none!important;
+}
+.btnForm{
+  width: 80%;
+  background-color: #6666A4 !important;
+  border: none !important;
+}
+.btnForm:hover{
+
+  background-color: #7474bc !important;
+
+}
+
+@media (max-width: 550px) {
+
+  .formu{
+    margin-left: 0%;
+  }
+  .containerForm{
+    margin-left: 0% !important;
+  }
+  .pillRow{
+    max-width: 95%!important;
   }
 }
