@@ -8,16 +8,16 @@ export const ContainerPills = () => {
 
                 <ProjectPill
                     title="Neon-Rhythms"
-                    content="Minijuego web creado con html,javascript vanila y css"
-                    srcVideo="media/videoLoop.mp4"
+                    content="Mini-juego web de ritmos con rakings."
+                    srcVideo="media/videoNeon.mp4"
                     srcImage="img/neon.png"
                     hrefLink="https://david-pr.com/Neon-rhythms/" />
 
                 <ProjectPill
-                    title="Neon-Rhythms"
-                    content="Minijuego web creado con html,javascript vanila y css"
-                    srcVideo="media/headVideo.mp4"
-                    srcImage="img/neon.png" />
+                    title="Neptuno project control"
+                    content="Una aplicacion de gestion empresarial con marcaje horario y diferentes cruds."
+                    srcVideo="media/videoNeptuno.mp4"
+                    srcImage="img/neptuno.png" />
             </div>
         </>
     )

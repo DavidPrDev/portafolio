@@ -11,16 +11,16 @@ export const Rownav = ({ }) => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Sobre mi</a>
+                                <a className="nav-link" href="#sobre-mi">Sobre mi</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Tecnologias</a>
+                                <a className="nav-link" href="#tecnologias">Tecnologias</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Proyectos</a>
+                                <a className="nav-link" href="#proyectos">Proyectos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contactame</a>
+                                <a className="nav-link" href="#contacto">Contactame</a>
                             </li>
 
                             <li className="nav-item">

@@ -17,7 +17,9 @@
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
     "react-hover-video-player": "^10.0.1",
-    "react-tooltip": "^5.24.0"
+    "react-tooltip": "^5.24.0",
+    "typeface-roboto-mono": "^1.1.13",
+    "typeface-rubik": "^1.1.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

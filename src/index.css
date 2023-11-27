@@ -6,8 +6,17 @@ html,body{
   background-color: #16161a !important;
   
 }
+.modal-content {
+  background-color: #16161a !important;
+}
+p,.txtContent,.subtitle{
+  font-family: 'Roboto Mono', monospace;
+}
 
 
+h1,h4,h3,h2{
+  font-family: 'Roboto Mono', monospace;
+}
 
 .formu{
   border:2px solid gray;

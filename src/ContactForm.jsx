@@ -3,12 +3,14 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 export const ContactForm = () => {
-    const [formData, setFormData] = useState({
+    const initialFormData = {
         nombre: '',
         asunto: '',
         email: '',
         contenido: ''
-    });
+    };
+
+    const [formData, setFormData] = useState(initialFormData);
 
     const [csrfToken, setCsrfToken] = useState(null);
     const [showModal, setShowModal] = useState(false);
@@ -20,6 +22,7 @@ export const ContactForm = () => {
                 const datos = await respuesta.json();
                 setCsrfToken(datos.csrf_token);
             } catch (error) {
+
                 console.error('Error al obtener el token CSRF:', error);
             }
         };
@@ -41,6 +44,7 @@ export const ContactForm = () => {
 
         if (!csrfToken) {
             console.error('No se pudo obtener el token CSRF. Formulario no enviado.');
+            setFormData(initialFormData);
             return;
         }
 
@@ -59,10 +63,16 @@ export const ContactForm = () => {
             // Manejar la respuesta del servidor si es necesario
             console.log('Respuesta del servidor:', data);
 
+            // Restablecer los valores del formulario después de enviar
+            setFormData(initialFormData);
+
             // Abrir el modal después de que la solicitud Fetch haya tenido éxito
             setShowModal(true);
         } catch (error) {
+
+            setFormData(initialFormData);
             console.error('Error al enviar el formulario:', error);
+
         }
     };
 
@@ -72,12 +82,12 @@ export const ContactForm = () => {
 
     return (
         <>
-            <div className='container containerForm'>
+            <div className='container containerForm' id="contacto">
                 <div className='row '>
                     <div className="col-md-3 d-md-block d-sm-none"></div>
                     <div className="col-sm-12 col-md-6">
-                        <h2 >Contacto</h2>
-                        <p>Contacta conmigo a través de este formulario, o enviando un correo a contactame@david-pr.com</p>
+                        <h2>Contacto</h2>
+                        <p>Contacta conmigo a través de este formulario, o enviando un correo a : <b>contactame@david-pr.com</b></p>
                         <form className='formu mt-4' onSubmit={handleSubmit}>
 
                             <input
@@ -87,6 +97,7 @@ export const ContactForm = () => {
                                 placeholder='Nombre:'
                                 value={formData.nombre}
                                 onChange={handleChange}
+                                required
                             />
 
                             <br />
@@ -98,6 +109,7 @@ export const ContactForm = () => {
                                 value={formData.asunto}
                                 onChange={handleChange}
                                 className="inputCustom form-control"
+                                required
                             />
 
                             <br />
@@ -109,6 +121,7 @@ export const ContactForm = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 className="inputCustom form-control"
+                                required
                             />
 
                             <br />
@@ -119,6 +132,7 @@ export const ContactForm = () => {
                                 placeholder='Contenido:'
                                 onChange={handleChange}
                                 className="inputCustom form-control"
+                                required
                             />
 
                             <br />
@@ -131,12 +145,13 @@ export const ContactForm = () => {
             </div>
 
             {/* Modal de Bootstrap */}
-            <Modal show={showModal} onHide={handleCloseModal}>
+            <Modal show={showModal} onHide={handleCloseModal} aria-labelledby="contained-modal-title-vcenter"
+                centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>Solicitud Fetch completada</Modal.Title>
+                    <Modal.Title>Mail enviado Correctamente !</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Puedes personalizar el contenido del modal aquí.
+                    Pronto respondere a tu email gracias por contactar conmigo.
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseModal}>

@@ -6,7 +6,7 @@ export const VideoHover = ({ srcVideo, srcImage, hrefLink }) => {
             videoSrc={srcVideo}
             videoStyle={{
                 minWidth: "40vh",
-                height: "40vh",
+                minHeight: "30vh",
                 borderRadius: "10px",
             }}
             pausedOverlay={

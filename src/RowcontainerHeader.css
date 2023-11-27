@@ -3,6 +3,7 @@
     height:30vh;
      margin-top: -6vh;
     border-radius: 35px;
+    margin-left: 10vh;
 
   }
   
@@ -15,17 +16,26 @@
     color: rgb(122, 121, 121);
   }
 
-.divheader{
-  margin-left: 8%!important;
-}
+
   @media (max-width: 600px) {
     #videoPlayer{
       width: 22vh;
       height:22vh;
       margin-top: -2vh;
-      margin-left: 4vh;
+      margin-left: 14vh;
     }
     .subtitle{
       font-size: 21px;
     }
+
+  }
+  @media (max-width: 400px) {
+    #videoPlayer{
+      width: 16vh;
+      height:16vh;
+      margin-top: -40vh;
+      margin-left: 10vh;
+    }
+  
+
   }

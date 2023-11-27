@@ -13,7 +13,7 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink }) =>
                 </div>
 
                 <div className="col-sm-5 col-12 mt-3 txtContent">
-                    <h4>{title}</h4>
+                    <h5>{title}</h5>
                     <p >{content}</p>
                 </div>
             </div>
