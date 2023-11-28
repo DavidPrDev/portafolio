@@ -11,7 +11,6 @@ const fadeInUpNav = {
     animate: {
         opacity: 1,
         y: "0%",
-
         transition: {
             delay: 3,
             duration: 1,

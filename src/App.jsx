@@ -7,6 +7,9 @@ import { ContainerPills } from './ContainerPills'
 import { ContactForm } from './ContactForm'
 import { RowFooter } from './RowFooter'
 import { OverlayLoading } from './OverlayLoading'
+
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-rubik';
 import 'typeface-roboto-mono';
@@ -39,6 +42,7 @@ export const App = () => {
         subtitle="Algunas de mis tecnologías mas utilizadas."
         idSeccion="/tecnologias"
       />
+
       <RowContainer4
         titulo="Proyectos"
         content={<ContainerPills />}
@@ -47,6 +51,7 @@ export const App = () => {
       />
       <ContactForm />
       <RowFooter />
+
     </>
 
   )

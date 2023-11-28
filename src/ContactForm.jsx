@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import { motion } from 'framer-motion';
+import './ContactForm.css'
 
 export const ContactForm = () => {
     const initialFormData = {
@@ -67,7 +69,7 @@ export const ContactForm = () => {
             setFormData(initialFormData);
 
             // Abrir el modal después de que la solicitud Fetch haya tenido éxito
-            setShowModal(true);
+            handleButtonClick();
         } catch (error) {
 
             setFormData(initialFormData);
@@ -76,10 +78,17 @@ export const ContactForm = () => {
         }
     };
 
-    const handleCloseModal = () => {
-        setShowModal(false);
+
+    const variants = {
+        hidden: { opacity: 0, y: "-10%", display: "none" },
+        visible: { opacity: 1, y: "-110%", display: "block" },
+    };
+    const [isVisible, setIsVisible] = useState(false);
+    const handleButtonClick = () => {
+        setIsVisible(!isVisible);
     };
 
+    const currentVariants = isVisible ? 'visible' : 'hidden';
     return (
         <>
             <div className='container containerForm' id="/contacto">
@@ -139,26 +148,22 @@ export const ContactForm = () => {
                             <Button type="submit" className="mb-4 btnForm">Enviar</Button>
 
                         </form>
+
+                        <motion.div
+                            initial="hidden"
+                            animate={currentVariants}
+                            variants={variants}
+                            className='modalito'
+                        >
+                            <button onClick={handleButtonClick}>Cambiar Variante</button>
+                        </motion.div>
                     </div>
                     <div className="col-md-3 d-md-block d-sm-none"></div>
                 </div>
             </div>
 
             {/* Modal de Bootstrap */}
-            <Modal show={showModal} onHide={handleCloseModal} aria-labelledby="contained-modal-title-vcenter"
-                centered>
-                <Modal.Header closeButton>
-                    <Modal.Title>Mail enviado Correctamente !</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    Pronto respondere a tu email gracias por contactar conmigo.
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleCloseModal}>
-                        Cerrar
-                    </Button>
-                </Modal.Footer>
-            </Modal>
+
         </>
     );
 };

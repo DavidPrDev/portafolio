@@ -5,14 +5,14 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink }) =>
     return (
         <>
             <div className="row pillRow mt-5">
-                <div className="col-sm-7 col-12 tal">
+                <div className="col-md-7 col-sm-12 tal">
                     <VideoHover
                         srcVideo={srcVideo}
                         srcImage={srcImage}
                         hrefLink={hrefLink} />
                 </div>
 
-                <div className="col-sm-5 col-12 mt-3 txtContent">
+                <div className="col-md-5 col-sm-12 mt-3 txtContent">
                     <h5>{title}</h5>
                     <p >{content}</p>
                 </div>

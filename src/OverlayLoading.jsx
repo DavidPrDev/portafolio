@@ -5,7 +5,7 @@ import './OverlayLoading.css'
 export const OverlayLoading = () => {
     const [isVisible, setIsVisible] = useState(true);
 
-    // Desaparecer después de 1 segundo
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(false);
