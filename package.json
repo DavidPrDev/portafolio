@@ -12,11 +12,14 @@
   "dependencies": {
     "bootstrap": "5.0.0",
     "bootstrap-icons": "^1.11.2",
+    "framer-motion": "^10.16.5",
     "react": "^18.2.0",
     "react-bootstrap": "2.9.1",
     "react-bootstrap-icons": "^1.10.3",
     "react-dom": "^18.2.0",
     "react-hover-video-player": "^10.0.1",
+    "react-router-dom": "^6.20.0",
+    "react-scroll": "^1.9.0",
     "react-tooltip": "^5.24.0",
     "typeface-roboto-mono": "^1.1.13",
     "typeface-rubik": "^1.1.13"

@@ -30,18 +30,18 @@ export const App = () => {
        y pasión con un equipo profesionales , con conocimiento de front-end(html,css,js) y back-end
         (mysql,php,java) asi como  frameworks y librerías como bootstrap, jquery ,react,laravel. "
 
-        idSeccion="sobre-mi" />
+        idSeccion="/sobre-mi" />
       <RowContainer4
         titulo="Tecnologías"
         content={<RowIcons />}
         subtitle="Algunas de mis tecnologías mas utilizadas."
-        idSeccion="tecnologias"
+        idSeccion="/tecnologias"
       />
       <RowContainer4
         titulo="Proyectos"
         content={<ContainerPills />}
         subtitle="Consulta algunos de mis proyectos."
-        idSeccion="proyectos"
+        idSeccion="/proyectos"
       />
       <ContactForm />
       <RowFooter />

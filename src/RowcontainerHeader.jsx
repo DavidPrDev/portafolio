@@ -14,7 +14,7 @@ export const RowcontainerHeader = ({
     const icons = withIcons ? <Icons /> : "";
     return (
         <>
-            <div className={`container ${clasContainer}`} id="inicio">
+            <div className={`container ${clasContainer}`} >
                 <div className={`row ${classCenter} ${custClass}`}>
                     <div className="col-md-3 d-md-block d-sm-none"></div>
                     <div className="col-md-3 col-6 ">

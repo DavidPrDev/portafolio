@@ -1,4 +1,6 @@
 import './Rownav.css'
+import { Link } from "react-scroll";
+
 export const Rownav = ({ }) => {
 
     return (
@@ -11,16 +13,42 @@ export const Rownav = ({ }) => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="#sobre-mi">Sobre mi</a>
+                                <Link
+                                    spy={true}
+                                    smooth={false}
+                                    offset={-75}
+                                    duration={700}
+                                    className="nav-link"
+                                    to="/sobre-mi"
+                                >Sobre mi
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#tecnologias">Tecnologias</a>
+                                <Link
+                                    spy={true}
+                                    smooth={false}
+                                    offset={-75}
+                                    duration={700}
+                                    className="nav-link"
+                                    to="/tecnologias">Tecnologías</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#proyectos">Proyectos</a>
+                                <Link
+                                    spy={true}
+                                    smooth={false}
+                                    offset={-75}
+                                    duration={700}
+                                    className="nav-link"
+                                    to="/proyectos">Proyectos</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#contacto">Contactame</a>
+                                <Link
+                                    spy={true}
+                                    smooth={false}
+                                    offset={-75}
+                                    duration={700}
+                                    className="nav-link"
+                                    to="/contacto">Contactame</Link>
                             </li>
 
                             <li className="nav-item">
@@ -29,7 +57,7 @@ export const Rownav = ({ }) => {
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav >
 
 
         </>

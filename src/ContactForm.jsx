@@ -82,7 +82,7 @@ export const ContactForm = () => {
 
     return (
         <>
-            <div className='container containerForm' id="contacto">
+            <div className='container containerForm' id="/contacto">
                 <div className='row '>
                     <div className="col-md-3 d-md-block d-sm-none"></div>
                     <div className="col-sm-12 col-md-6">

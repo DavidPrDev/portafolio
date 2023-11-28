@@ -12,7 +12,9 @@ html,body{
 p,.txtContent,.subtitle{
   font-family: 'Roboto Mono', monospace;
 }
-
+.nav-link{
+  cursor: pointer;
+}
 
 h1,h4,h3,h2{
   font-family: 'Roboto Mono', monospace;

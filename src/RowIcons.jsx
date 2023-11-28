@@ -1,49 +1,52 @@
-import './RowIcons.css'
+import React from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import { motion } from "framer-motion";
+import "./RowIcons.css";
+
+const fadeInAnimationVariants = {
+    initial: {
+        opacity: 0,
+        y: 100,
+    },
+    animate: (index) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.07 * index
+        }
+    })
+};
 
 export const RowIcons = () => {
-
     return (
         <>
-            <div className="colIcons justify-content-arround">
-                <OverlayTrigger placement="top" overlay={<Tooltip >Html</Tooltip>}>
-                    <img className="logoSkills" src="img/html.png" alt="logo html" />
-                </OverlayTrigger>
+            <div className="colIcons justify-content-around">
+                {[
+                    { src: "img/html.png", alt: "logo html", tooltip: "Html" },
+                    { src: "img/css.png", alt: "logo css", tooltip: "Css" },
+                    { src: "img/javascript.png", alt: "logo javascript", tooltip: "Javascript" },
+                    { src: "img/php.png", alt: "logo php", tooltip: "Php" },
+                    { src: "img/java.png", alt: "logo java", tooltip: "Java" },
+                    { src: "img/php.png", alt: "logo php", tooltip: "Php" },
+                    { src: "img/react.png", alt: "logo react", tooltip: "React" },
+                    { src: "img/jquery.png", alt: "logo jquery", tooltip: "Jquery" },
+                    { src: "img/laravel.png", alt: "logo laravel", tooltip: "Laravel" },
+                    { src: "img/bootstrap.png", alt: "logo bootstrap", tooltip: "Bootstrap" },
+                    { src: "img/mysql.png", alt: "logo mysql", tooltip: "MYSQL" },
+                    { src: "img/github.png", alt: "logo github", tooltip: "Github" },
 
-                <OverlayTrigger placement="top" overlay={<Tooltip >Css</Tooltip>}>
-                    <img className="logoSkills" src="img/css.png" alt="logo css" />
-                </OverlayTrigger>
-
-                <OverlayTrigger placement="top" overlay={<Tooltip >Javascript</Tooltip>}>
-                    <img className="logoSkills" src="img/javascript.png" alt=" logo javascript" />
-                </OverlayTrigger>
-
-                <OverlayTrigger placement="top" overlay={<Tooltip >Php</Tooltip>}>
-                    <img className="logoSkills" src="img/php.png" alt="logo php " />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >Java</Tooltip>}>
-                    <img className="logoSkills" src="img/java.png" alt="logo java " />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >React</Tooltip>}>
-                    <img className="logoSkills" src="img/react.png" alt=" logo react" />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >Jquery</Tooltip>}>
-                    <img className="logoSkills" src="img/jquery.png" alt=" logo jquery" />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >Laravel</Tooltip>}>
-                    <img className="logoSkills" src="img/laravel.png" alt="logo laravel" />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >Bootstrap</Tooltip>}>
-                    <img className="logoSkills" src="img/bootstrap.png" alt="logo bootstrap" />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >Mysql</Tooltip>}>
-                    <img className="logoSkills" src="img/mysql.png" alt="logo mysql" />
-                </OverlayTrigger>
-                <OverlayTrigger placement="top" overlay={<Tooltip >Github</Tooltip>}>
-                    <img className="logoSkills" src="img/github.png" alt="logo github" />
-                </OverlayTrigger>
+                ].map((icon, index) => (
+                    <OverlayTrigger key={index} placement="top" overlay={<Tooltip>{icon.tooltip}</Tooltip>}>
+                        <motion.img className="logoSkills" src={icon.src} alt={icon.alt}
+                            variants={fadeInAnimationVariants}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{ once: true }}
+                            custom={index} />
+                    </OverlayTrigger>
+                ))}
             </div>
         </>
-    )
-}
+    );
+};
