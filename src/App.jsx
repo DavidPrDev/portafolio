@@ -6,6 +6,7 @@ import { Rownav } from './Rownav'
 import { ContainerPills } from './ContainerPills'
 import { ContactForm } from './ContactForm'
 import { RowFooter } from './RowFooter'
+import { OverlayLoading } from './OverlayLoading'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-rubik';
 import 'typeface-roboto-mono';
@@ -15,6 +16,7 @@ export const App = () => {
 
   return (
     <>
+      <OverlayLoading />
       <Rownav />
       <RowcontainerHeader
         titulo="David Pérez "

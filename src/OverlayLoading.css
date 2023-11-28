@@ -1,0 +1,28 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .loader__logo {
+    width: 100px;
+    
+  }
+  
+  .loader__wrapper {
+    background-color: #ebeaec;
+    width: 220px;
+    overflow: hidden;
+    border-radius: 4px;
+   
+  }
+  
+  .loader__indicator {
+    height: 11px;
+    background-color: #8D6C9F;
+    border-radius: 4px;
+    width:220px ;
+    opacity: 1!important;
+  }
+  

@@ -1,6 +1,6 @@
 #videoPlayer{
-    width: 30vh;
-    height:30vh;
+    width: 200px;
+    height:200px;
      margin-top: -6vh;
     border-radius: 35px;
     margin-left: 10vh;
@@ -8,8 +8,8 @@
   }
   
   .tituloPrincipal{
-    padding-top: 30vh!important;
-    height: 85vh;
+    padding-top: 40vh!important;
+    height: 100vh;
     text-wrap: nowrap;
   }
   .subtitle{

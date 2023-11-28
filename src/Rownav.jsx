@@ -1,11 +1,33 @@
 import './Rownav.css'
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
+const fadeInUpNav = {
+    initial: {
+        opacity: 0,
+        y: "-50%",
+
+    },
+    animate: {
+        opacity: 1,
+        y: "0%",
+
+        transition: {
+            delay: 3,
+            duration: 1,
+        }
+    }
+};
 export const Rownav = ({ }) => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-md navbar-dark  fixed-top">
+            <motion.nav
+                className="navbar navbar-expand-md navbar-dark  fixed-top"
+                variants={fadeInUpNav}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}>
                 <div className="container">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -57,7 +79,7 @@ export const Rownav = ({ }) => {
                         </ul>
                     </div>
                 </div>
-            </nav >
+            </motion.nav >
 
 
         </>
