@@ -25,7 +25,8 @@ h1,h4,h3,h2{
   padding-left: 16%;
   border: 2px solid #6666a420;
   border-radius: 10px;  
- 
+ padding-top: 15px;
+ padding-bottom: 15px;
 }
 .inputCustom{
   width: 80%!important;
@@ -55,5 +56,8 @@ h1,h4,h3,h2{
   }
   .pillRow{
     max-width: 95%!important;
+  }
+  .colIcons{
+    margin-left:8% !important;
   }
 }

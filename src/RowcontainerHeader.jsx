@@ -16,7 +16,7 @@ const fadeInLeft = {
             delay: 1.7,
             duration: 0.5,
             type: "spring",
-            damping: 9,
+            damping: 11,
             stiffness: 100,
         }
     }
@@ -36,8 +36,8 @@ const fadeInUp = {
             delay: 2.5,
             duration: 0.5,
             type: "spring",
-            damping: 9.5,
-            stiffness: 110,
+            damping: 11,
+            stiffness: 100,
         }
     }
 };

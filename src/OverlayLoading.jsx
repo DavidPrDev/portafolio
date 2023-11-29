@@ -29,6 +29,7 @@ export const OverlayLoading = () => {
                         justifyContent: 'center',
                         alignItems: 'center',
                         color: '#fff',
+                        zIndex: 1040,
                     }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

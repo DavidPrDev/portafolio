@@ -12,7 +12,7 @@ const fadeInUpNav = {
         opacity: 1,
         y: "0%",
         transition: {
-            delay: 3,
+            delay: 3.3,
             duration: 1,
         }
     }
@@ -31,7 +31,7 @@ export const Rownav = ({ }) => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse text-center" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link
@@ -73,7 +73,7 @@ export const Rownav = ({ }) => {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Descargar Cv</a>
+                                <a className="nav-link btn btn-success" id="btnCv" href="cv.pdf">Descargar Cv</a>
                             </li>
                         </ul>
                     </div>

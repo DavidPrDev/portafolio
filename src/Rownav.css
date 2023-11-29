@@ -6,5 +6,12 @@
     }
     .navbar{
         background-color: #212127e5;
+        font-family: 'Roboto Mono', monospace;
+       
     }
-    
+
+   #btnCv{
+    width: 140px !important;
+    margin: auto;
+   }
+

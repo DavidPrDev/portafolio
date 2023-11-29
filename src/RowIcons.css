@@ -1,8 +1,8 @@
- .logoSkills{
-    margin-right:4% ;
-} 
 .colIcons{
     margin-top: 3vh!important;
-  
-   
+   margin-left:4%;
+}
+.logoContainer{
+    padding-right:4% ;
+    display: inline-block !important;
 }

@@ -17,6 +17,15 @@ const fadeInAnimationVariants = {
         }
     })
 };
+const hoverEffectVariants = {
+    hover: {
+        scale: 1.1,
+        y: -8,
+        transition: {
+            duration: 0.1, type: "spring", damping: 12, stiffness: 309
+        } // Puedes ajustar esto según tus preferencias
+    },
+};
 
 export const RowIcons = () => {
     return (
@@ -37,14 +46,18 @@ export const RowIcons = () => {
                     { src: "img/github.png", alt: "logo github", tooltip: "Github" },
 
                 ].map((icon, index) => (
+
                     <OverlayTrigger key={index} placement="top" overlay={<Tooltip>{icon.tooltip}</Tooltip>}>
-                        <motion.img className="logoSkills" src={icon.src} alt={icon.alt}
-                            variants={fadeInAnimationVariants}
-                            initial="initial"
-                            whileInView="animate"
-                            viewport={{ once: true }}
-                            custom={index} />
+                        <motion.div className="logoContainer" variants={hoverEffectVariants} whileHover="hover">
+                            <motion.img className="logoSkills" src={icon.src} alt={icon.alt}
+                                variants={fadeInAnimationVariants}
+                                initial="initial"
+                                whileInView="animate"
+                                viewport={{ once: true }}
+                                custom={index} />
+                        </motion.div>
                     </OverlayTrigger>
+
                 ))}
             </div>
         </>

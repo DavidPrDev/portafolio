@@ -1,10 +1,49 @@
-.modalito{
-    width: 80%;
-    height: 70%;
-   margin: auto !important;
-    border-radius: 10px;
-    display:none;
-    background-color: #171723;
-    border:2px solid #6666a420;
-    
+.modalCustom{
+    position: relative;
+    width: 30%;
+    min-width: 340px !important;
+    min-height: 200px !important;
+    top:37%; 
+    background-color: #24242e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 254, 254, 0.079);
+    z-index: 1050!important;
+    border: 2px solid #505082d1;
 }
+.colmodal{
+    text-wrap: nowrap;
+}
+.btnclose{
+    width: 80%!important;
+    margin-left: 10%;
+}
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    z-index: 1040; /* Asegúrate de que la capa esté por encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #logoBackgroun{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+
+  }
+  #sendEm{
+    width: 70px;
+    height:70px;
+    display: block;
+    margin:  auto ;
+   padding-top: 10px;
+  }
