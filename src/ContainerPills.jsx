@@ -7,6 +7,15 @@ export const ContainerPills = () => {
             <div className='row '>
 
                 <ProjectPill
+                    title="Meteo map"
+                    content="Mapa en tiempo real 
+                    con buscador de municipios gracias a la  api de AEMET OpenData."
+                    srcVideo="media/meteomap1.mp4"
+                    srcImage="img/meteoImg.png"
+                    hrefLink="https://meteomap.david-pr.com/"
+                    video={true}
+                    icons={["img/laravelIcono.png", "img/reactIcon.png"]} />
+                <ProjectPill
                     title="Neon-Rhythms"
                     content="Mini-juego web de ritmos con rakings."
                     srcVideo="media/videoNeon.mp4"

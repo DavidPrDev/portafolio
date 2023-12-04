@@ -14,7 +14,7 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, vide
 
     let images = [];
     for (let i = 0; i < icons.length; i++) {
-        images.push(<img className='imgSb' src={icons[i]} alt={`Icon ${i}`} />);
+        images.push(<img key={`icon-${i}`} className='imgSb' src={icons[i]} alt={`Icon ${i}`} />);
     }
 
     return (
