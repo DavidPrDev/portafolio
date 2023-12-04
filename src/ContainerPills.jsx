@@ -14,7 +14,7 @@ export const ContainerPills = () => {
                     srcImage="img/meteoImg.png"
                     hrefLink="https://meteomap.david-pr.com/"
                     video={true}
-                    icons={["img/laravelIcono.png", "img/reactIcon.png"]} />
+                    icons={["img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]} />
                 <ProjectPill
                     title="Neon-Rhythms"
                     content="Mini-juego web de ritmos con rakings."
