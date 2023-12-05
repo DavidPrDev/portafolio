@@ -17,7 +17,7 @@ export const ContainerPills = () => {
                     icons={["img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]} />
                 <ProjectPill
                     title="Neon-Rhythms"
-                    content="Mini-juego web de ritmos con rakings."
+                    content="Mini-juego web de ritmos con rankings."
                     srcVideo="media/videoNeon.mp4"
                     srcImage="img/neon.png"
                     hrefLink="https://david-pr.com/Neon-rhythms/"
@@ -26,7 +26,7 @@ export const ContainerPills = () => {
 
                 <ProjectPill
                     title="Neptuno project control"
-                    content="Una aplicacion de gestion empresarial con marcaje horario y diferentes cruds."
+                    content="Una aplicación de gestión empresarial con marcaje horario y diferentes cruds."
                     srcVideo="media/videoNeptuno.mp4"
                     srcImage="img/neptuno.png"
                     hrefLink="http://93.93.113.41/plesk-site-preview/curso-mataroin.com/https/93.93.113.41/DPR/ProyectoFinalMvc/"
@@ -34,7 +34,7 @@ export const ContainerPills = () => {
                     icons={["img/phpSb.png", "img/mysqlSb.png"]} />
                 <ProjectPill
                     title="CSV Compare "
-                    content="Clase en php para compara dos ficheros php."
+                    content="Clase en php para comparar dos ficheros csv."
                     srcVideo=""
                     srcImage="img/imgPhp.jpg"
                     hrefLink="https://github.com/DaviDisDev/PHP-CSV-Compare"
