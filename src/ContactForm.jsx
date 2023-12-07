@@ -107,7 +107,7 @@ export const ContactForm = () => {
                     <div className="col-md-3 d-md-block d-sm-none"></div>
                     <div className="col-sm-12 col-md-6">
                         <h2>Contacto</h2>
-                        <p>Contacta conmigo a través de este formulario, o enviando un correo a : <b>contactame@david-pr.com</b></p>
+                        <p>Contacta conmigo a través de este formulario, o enviando un correo a : <b>contacto@david-pr.com</b></p>
                         <form className='formu mt-4' onSubmit={handleSubmit}>
 
                             <input
