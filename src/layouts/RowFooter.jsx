@@ -1,4 +1,4 @@
-import './RowFooter.css'
+import '../styles/RowFooter.css'
 
 export const RowFooter = ({ }) => {
 

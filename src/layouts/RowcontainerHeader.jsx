@@ -1,5 +1,5 @@
-import './RowcontainerHeader.css'
-import { Icons } from './Icons'
+import '../styles/RowcontainerHeader.css'
+import { Icons } from '../components/Icons'
 import { motion } from "framer-motion";
 const fadeInLeft = {
     initial: {

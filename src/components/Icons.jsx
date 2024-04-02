@@ -1,4 +1,4 @@
-import './Icons.css'
+import '../styles/Icons.css'
 import { Github, Linkedin, EnvelopeAtFill } from 'react-bootstrap-icons';
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
@@ -12,7 +12,7 @@ export const Icons = () => {
 
                 <div className=" col-12 d-flex ">
                     <OverlayTrigger placement="top" overlay={<Tooltip >Github</Tooltip>}>
-                        <a href="https://github.com/DaviDisDev" id='github' ><Github /></a>
+                        <a href="https://github.com/DavidPrDev" id='github' ><Github /></a>
                     </OverlayTrigger>
 
                     <OverlayTrigger placement="top" overlay={<Tooltip >Linkedin</Tooltip>}>

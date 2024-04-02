@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import { RowcontainerHeader } from './RowcontainerHeader'
-import { RowContainer4 } from './RowContainer4'
-import { RowIcons } from './RowIcons'
-import { Rownav } from './Rownav'
-import { ContainerPills } from './ContainerPills'
-import { ContactForm } from './ContactForm'
-import { RowFooter } from './RowFooter'
-import { OverlayLoading } from './OverlayLoading'
-
-
+import { Github } from 'react-bootstrap-icons';
+import { RowcontainerHeader } from './layouts/RowcontainerHeader'
+import { RowContainer4 } from './layouts/RowContainer4'
+import { RowIcons } from './layouts/RowIcons'
+import { Rownav } from './layouts/Rownav'
+import { ContainerPills } from './layouts/ContainerPills'
+import { ContactForm } from './layouts/ContactForm'
+import { RowFooter } from './layouts/RowFooter'
+import { OverlayLoading } from './components/OverlayLoading'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-rubik';
@@ -32,7 +30,7 @@ export const App = () => {
       <RowContainer4
         titulo="Sobre mi"
         content="Desarrollador web en constante aprendizaje , siempre dispuesto a utilizar mis habilidades
-       y pasión con un equipo profesionales , con conocimiento de front-end(html,css,js) y back-end
+       y pasión con un equipo profesional , con conocimiento de front-end(html,css,js) y back-end
         (mysql,php,java) asi como  frameworks y librerías como bootstrap, jquery ,react,laravel. "
 
         idSeccion="/sobre-mi" />
@@ -46,7 +44,11 @@ export const App = () => {
       <RowContainer4
         titulo="Proyectos"
         content={<ContainerPills />}
-        subtitle="Consulta algunos de mis proyectos."
+        subtitle={
+          <span>
+            Consulta algunos de mis proyectos online o su código en <a href="https://github.com/DavidPrDev" id='githubSub' > GitHub <Github /></a>
+          </span>
+        }
         idSeccion="/proyectos"
       />
       <ContactForm />

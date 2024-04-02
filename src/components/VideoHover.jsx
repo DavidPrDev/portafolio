@@ -1,5 +1,5 @@
 import HoverVideoPlayer from "react-hover-video-player"
-import './VideoHover.css'
+import '../styles/VideoHover.css'
 export const VideoHover = ({ srcVideo, srcImage, hrefLink }) => {
     return (
         <HoverVideoPlayer

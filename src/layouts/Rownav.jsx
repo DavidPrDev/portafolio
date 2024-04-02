@@ -1,4 +1,4 @@
-import './Rownav.css'
+import '../styles/Rownav.css'
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 

@@ -1,10 +1,19 @@
-import { ProjectPill } from './ProjectPill'
+import { ProjectPill } from '../components/ProjectPill'
 
 export const ContainerPills = () => {
 
     return (
         <>
             <div className='row '>
+
+                <ProjectPill
+                    title="Receptarium"
+                    content="Receptarium es una aplicacion para almacenar y gestionar tus recetas de una forma sencilla para android."
+                    srcVideo="media/receptarium.mp4"
+                    srcImage="img/receptarium-graph.png"
+                    hrefLink="https://github.com/DaviDisDev/Receptarium_public"
+                    video={true}
+                    icons={["img/android.png", "img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]} />
 
                 <ProjectPill
                     title="Meteo map"

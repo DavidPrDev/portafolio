@@ -1,4 +1,4 @@
-import './Rowcontainer4.css'
+import '../styles/RowContainer4.css'
 
 export const RowContainer4 = ({ titulo, content, subtitle = null, idSeccion = null }) => {
     const subt = subtitle == null ? "" : subtitle;

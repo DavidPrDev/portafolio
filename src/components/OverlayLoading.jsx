@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import './OverlayLoading.css'
+import '../styles/OverlayLoading.css'
 
 export const OverlayLoading = () => {
     const [isVisible, setIsVisible] = useState(true);

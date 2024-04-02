@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import { motion, AnimatePresence } from 'framer-motion';
-import './ContactForm.css'
+import '../styles/ContactForm.css'
+import { GetToken } from '../services/GetToken';
+import { SendEmail } from '../services/SendEmail';
 
 export const ContactForm = () => {
     const initialFormData = {
@@ -17,19 +19,17 @@ export const ContactForm = () => {
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        const obtenerCsrfToken = async () => {
+        const fetchData = async () => {
             try {
-                const respuesta = await fetch('generarToken.php');
-                const datos = await respuesta.json();
-                setCsrfToken(datos.csrf_token);
-            } catch (error) {
+                const token = await GetToken();
 
-                console.error('Error al obtener el token CSRF:', error);
+                setCsrfToken(token);
+            } catch (error) {
+                console.log(error)
             }
         };
 
-        obtenerCsrfToken();
-
+        fetchData();
     }, []);
 
     const handleChange = (e) => {
@@ -50,24 +50,11 @@ export const ContactForm = () => {
         }
 
         try {
-            const response = await fetch('recibirForm.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-Token': csrfToken,
-                },
-                body: JSON.stringify(formData),
-            });
 
-            const data = await response.json();
+            await SendEmail(csrfToken, formData);
 
-            // Manejar la respuesta del servidor si es necesario
-            console.log('Respuesta del servidor:', data);
-
-            // Restablecer los valores del formulario después de enviar
             setFormData(initialFormData);
 
-            // Abrir el modal después de que la solicitud Fetch haya tenido éxito
             handleButtonClick();
         } catch (error) {
 

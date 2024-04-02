@@ -2,7 +2,7 @@ import React from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { motion } from "framer-motion";
-import "./RowIcons.css";
+import "../styles/RowIcons.css";
 
 const fadeInAnimationVariants = {
     initial: {

@@ -1,4 +1,4 @@
-import './ProjectPill.css'
+import '../styles/ProjectPill.css'
 import { VideoHover } from './VideoHover'
 
 
