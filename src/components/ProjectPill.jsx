@@ -31,7 +31,7 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, vide
                     <h5>{title}</h5>
                     <p >{content}</p>
                     <div className="row">
-                        <div className="col ">
+                        <div className="col containerIcons">
                             {images}
                         </div>
                     </div>
