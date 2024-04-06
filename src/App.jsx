@@ -31,7 +31,7 @@ export const App = () => {
         titulo="Sobre mi"
         content="Desarrollador web en constante aprendizaje , siempre dispuesto a utilizar mis habilidades
        y pasión con un equipo profesional , con conocimiento de front-end(html,css,js) y back-end
-        (mysql,php,java) asi como  frameworks y librerías como bootstrap, jquery ,react,laravel. "
+        (mysql,php,java) asi como  frameworks y librerías como bootstrap, jquery ,react, y laravel. "
 
         idSeccion="/sobre-mi" />
       <RowContainer4

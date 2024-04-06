@@ -11,3 +11,12 @@
 .imgSb{
     padding-left: 5%;
 }
+.linkContainer{
+    display: flex;
+    justify-content: center;
+    color: rgb(209, 206, 206);
+    text-decoration: none;
+}
+.linkContainer:hover{
+color: #404077;
+}

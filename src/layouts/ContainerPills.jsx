@@ -13,7 +13,8 @@ export const ContainerPills = () => {
                     srcImage="img/receptarium-graph.png"
                     hrefLink="https://github.com/DaviDisDev/Receptarium_public"
                     video={true}
-                    icons={["img/android.png", "img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]} />
+                    icons={["img/android.png", "img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]}
+                    urlGithub={"https://github.com/DavidPrDev/receptarium1.0"} />
 
                 <ProjectPill
                     title="Meteo map"
@@ -23,7 +24,9 @@ export const ContainerPills = () => {
                     srcImage="img/meteoImg.png"
                     hrefLink="https://meteomap.david-pr.com/"
                     video={true}
-                    icons={["img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]} />
+                    icons={["img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]}
+                    urlGithub={"https://github.com/DavidPrDev/meteoMap-1.2"} />
+
                 <ProjectPill
                     title="Neon-Rhythms"
                     content="Mini-juego web de ritmos con rankings."
@@ -31,7 +34,9 @@ export const ContainerPills = () => {
                     srcImage="img/neon.png"
                     hrefLink="https://david-pr.com/Neon-rhythms/"
                     video={true}
-                    icons={["img/htmlSb.png", "img/cssSb.png", "img/jsSb.png"]} />
+                    icons={["img/htmlSb.png", "img/cssSb.png", "img/jsSb.png"]}
+                    urlGithub={"https://github.com/DavidPrDev/Neon-Rhythms"}
+                />
 
                 <ProjectPill
                     title="Neptuno project control"
@@ -40,7 +45,9 @@ export const ContainerPills = () => {
                     srcImage="img/neptuno.png"
                     hrefLink="http://93.93.113.41/plesk-site-preview/curso-mataroin.com/https/93.93.113.41/DPR/ProyectoFinalMvc/"
                     video={true}
-                    icons={["img/phpSb.png", "img/mysqlSb.png"]} />
+                    icons={["img/phpSb.png", "img/mysqlSb.png"]}
+                    urlGithub={"https://github.com/DavidPrDev/Neptuno-project-control"} />
+
                 <ProjectPill
                     title="CSV Compare "
                     content="Clase en php para comparar dos ficheros csv."
@@ -48,7 +55,9 @@ export const ContainerPills = () => {
                     srcImage="img/imgPhp.jpg"
                     hrefLink="https://github.com/DaviDisDev/PHP-CSV-Compare"
                     video="false"
-                    icons={["img/phpSb.png"]} />
+                    icons={["img/phpSb.png"]}
+                    urlGithub={"https://github.com/DavidPrDev/PHP-CSV-Compare"} />
+
             </div>
         </>
     )

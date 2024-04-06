@@ -1,8 +1,8 @@
 import '../styles/ProjectPill.css'
 import { VideoHover } from './VideoHover'
+import { Github } from 'react-bootstrap-icons';
 
-
-export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, video, icons }) => {
+export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, video, icons, urlGithub }) => {
     const condicionVideo = video == true ?
         <VideoHover
             srcVideo={srcVideo}
@@ -22,6 +22,9 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, vide
             <div className="row pillRow mt-5">
                 <div className="col-md-7 col-sm-12 tal">
                     {condicionVideo}
+                    <div className='row '>
+                        <div className='col '><a className='linkContainer' href={urlGithub}>Visita  en Github <Github /></a></div>
+                    </div>
                 </div>
 
                 <div className="col-md-5 col-sm-12 mt-3 txtContent">
@@ -32,6 +35,7 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, vide
                             {images}
                         </div>
                     </div>
+
                 </div>
             </div>
 
