@@ -7,6 +7,17 @@ export const ContainerPills = () => {
             <div className='row '>
 
                 <ProjectPill
+                    title="React-ui-components"
+                    content="Librería para React que se instala a través de npm y proporciona componentes útiles como modales, tooltips y drag and drop."
+                    srcVideo="media/react-components.mp4"
+                    srcImage="img/react-componente.png"
+                    hrefLink="https://react-ui-components.david-pr.com/"
+                    video={true}
+                    icons={["img/reactIcon.png", "img/htmlSb.png", "img/cssSb.png", "img/jsSb.png"]}
+                    urlGithub={"https://github.com/DavidPrDev/react-ui-components"} />
+
+
+                <ProjectPill
                     title="Receptarium"
                     content="Receptarium es una aplicacion para almacenar y gestionar tus recetas de una forma sencilla para android."
                     srcVideo="media/receptarium.mp4"
@@ -52,7 +63,7 @@ export const ContainerPills = () => {
                     title="CSV Compare "
                     content="Clase en php para comparar dos ficheros csv."
                     srcVideo=""
-                    srcImage="img/imgPhp.jpg"
+                    srcImage="img/imgPhp.png"
                     hrefLink="https://github.com/DaviDisDev/PHP-CSV-Compare"
                     video="false"
                     icons={["img/phpSb.png"]}

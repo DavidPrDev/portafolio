@@ -7,8 +7,9 @@ export const ProjectPill = ({ title, content, srcVideo, srcImage, hrefLink, vide
         <VideoHover
             srcVideo={srcVideo}
             srcImage={srcImage}
-            hrefLink={hrefLink} /> : <VideoHover
-
+            hrefLink={hrefLink} />
+        :
+        <VideoHover
             srcImage={srcImage}
             hrefLink={hrefLink} />;
 
