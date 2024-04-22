@@ -1,8 +1,10 @@
+name: 🚀 Deploy website on push
+
 on:
   push:
     branches:
       - main
-name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,5 +19,5 @@ jobs:
         server: david-pr.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/ 
+        local-dir: ./porfolio/dist/  # Ajuste de ruta para apuntar a la carpeta dist
         server-dir: public_html/
