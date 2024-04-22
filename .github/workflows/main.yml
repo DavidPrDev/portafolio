@@ -1,9 +1,9 @@
+name: 🚀 Deploy website on push
+
 on:
   push:
     branches:
       - main
-
-name: 🚀 Deploy website on push
 
 jobs:
   web-deploy:
@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-      
+      uses: actions/checkout@v4
+    
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-       server: david-pr.com
-        username: ${{ secrets.FTP_USERNAME }} 
+        server: david-pr.com
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist/ # Aquí ajustamos la carpeta de distribución
-        server-dir: public_html
+        local-dir: dist/  
+        server-dir: public_html/
