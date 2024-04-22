@@ -1,5 +1,3 @@
-Place the following in /.github/workflows/main.yml
-
 on: push
 name: 🚀 Deploy website on push
 jobs:
