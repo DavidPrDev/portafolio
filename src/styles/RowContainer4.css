@@ -4,7 +4,7 @@
 #githubSub{
     text-decoration: none;
     color: rgb(214, 214, 214);
-   display: flex;
+   
 }
 #githubSub:hover{
     color: #404077;
