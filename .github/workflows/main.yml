@@ -1,7 +1,7 @@
- name: FTP Deploy
- uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-            
-on: push
+on:
+  push:
+    branches:
+      - main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
