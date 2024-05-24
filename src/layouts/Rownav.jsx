@@ -17,7 +17,7 @@ const fadeInUpNav = {
         }
     }
 };
-export const Rownav = ({ }) => {
+export const Rownav = () => {
 
     return (
         <>
