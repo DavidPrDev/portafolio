@@ -22,7 +22,7 @@ export const ContainerPills = () => {
                     content="Receptarium es una aplicacion para almacenar y gestionar tus recetas de una forma sencilla para android."
                     srcVideo="media/receptarium.mp4"
                     srcImage="img/receptarium-graph.png"
-                    hrefLink="https://github.com/DaviDisDev/Receptarium_public"
+                    hrefLink="https://github.com/DavidPrDev/receptarium1.0"
                     video={true}
                     icons={["img/android.png", "img/laravelIcono.png", "img/reactIcon.png", "img/mysqlSb.png"]}
                     urlGithub={"https://github.com/DavidPrDev/receptarium1.0"} />
